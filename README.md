@@ -12,7 +12,7 @@ poetry install
 > [!NOTE]
 > To compile protobuf schemas, you'll need `protoc` via [protobuf](https://grpc.io/docs/protoc-installation/). Once that's installed, run the following command:
 > ```bash
-> protoc --python_out=. ./schemas/*.proto
+> protoc --python_out=. ./notebooks/schemas/*.proto
 > ```
 > And then import them in the notebooks with:
 > ```python
