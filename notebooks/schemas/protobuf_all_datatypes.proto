@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package sample;
+
+message SampleMessage {
+  // Scalar types
+  bool boolean_field = 1;
+  int32 int32_field = 2;
+  int64 int64_field = 3;
+  uint32 uint32_field = 4;
+  uint64 uint64_field = 5;
+  sint32 sint32_field = 6;
+  sint64 sint64_field = 7;
+  fixed32 fixed32_field = 8;
+  fixed64 fixed64_field = 9;
+  sfixed32 sfixed32_field = 10;
+  sfixed64 sfixed64_field = 11;
+  float float_field = 12;
+  double double_field = 13;
+  bytes bytes_field = 14;
+  string string_field = 15;
+
+  // Enum type
+  enum EnumType {
+    ENUM_TYPE1 = 0;
+    ENUM_TYPE2 = 1;
+    ENUM_TYPE3 = 2;
+  }
+  EnumType enum_field = 16;
+
+  // Nested message
+  message NestedMessage {
+    int32 nested_int32_field = 1;
+  }
+  NestedMessage nested_message_field = 17;
+
+  // Repeated fields
+  repeated bool repeated_boolean_field = 18;
+
+  // Map fields
+  map<string, int32> map_field = 19;
+
+  // Oneof fields (union)
+  oneof oneof_field {
+    int32 oneof_int32_field = 20;
+    string oneof_string_field = 21;
+  }
+}

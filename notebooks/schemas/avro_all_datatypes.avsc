@@ -1,0 +1,82 @@
+{
+  "type": "record",
+  "namespace": "com.mycorp.mynamespace",
+  "name": "sampleRecord",
+  "fields": [
+    {
+      "name": "nullField",
+      "type": "null"
+    },
+    {
+      "name": "booleanField",
+      "type": "boolean"
+    },
+    {
+      "name": "intField",
+      "type": "int"
+    },
+    {
+      "name": "floatField",
+      "type": "float"
+    },
+    {
+      "name": "doubleField",
+      "type": "double"
+    },
+    {
+      "name": "bytesField",
+      "type": "bytes"
+    },
+    {
+      "name": "stringField",
+      "type": "string"
+    },
+    {
+      "name": "arrayField",
+      "type": {
+        "type": "array",
+        "items": "string"
+      }
+    },
+    {
+      "name": "mapField",
+      "type": {
+        "type": "map",
+        "values": "int"
+      }
+    },
+    {
+      "name": "enumField",
+      "type": {
+        "type": "enum",
+        "name": "sampleEnum",
+        "symbols": ["A", "B", "C"]
+      }
+    },
+    {
+      "name": "fixedField",
+      "type": {
+        "type": "fixed",
+        "name": "sampleFixed",
+        "size": 16
+      }
+    },
+    {
+      "name": "unionField",
+      "type": ["null", "string"]
+    },
+    {
+      "name": "recordField",
+      "type": {
+        "type": "record",
+        "name": "nestedRecord",
+        "fields": [
+          {
+            "name": "nestedField",
+            "type": "string"
+          }
+        ]
+      }
+    }
+  ]
+}

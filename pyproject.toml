@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "notebooks"
+version = "0.1.0"
+description = ""
+authors = ["Dave Shoup <dave.shoup@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+httpx = "^0.26.0"
+rich = "^13.7.0"
+ipykernel = "^6.29.4"
+orjson = "^3.10.5"
+confluent-kafka = {version ="^2.4.0", extras = ["protobuf"]}
+faker = "^26.0.0"
+requests = "^2.32.3"
+fastavro = "^1.9.4"
+jsonschema = "^4.22.0"
+google = "^3.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

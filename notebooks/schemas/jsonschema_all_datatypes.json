@@ -1,0 +1,85 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SampleSchema",
+  "type": "object",
+  "properties": {
+    "nullField": {
+      "type": "null"
+    },
+    "booleanField": {
+      "type": "boolean"
+    },
+    "integerField": {
+      "type": "integer"
+    },
+    "numberField": {
+      "type": "number"
+    },
+    "stringField": {
+      "type": "string"
+    },
+    "arrayField": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "objectField": {
+      "type": "object",
+      "properties": {
+        "key1": {
+          "type": "string"
+        },
+        "key2": {
+          "type": "integer"
+        }
+      },
+      "required": ["key1"]
+    },
+    "enumField": {
+      "type": "string",
+      "enum": ["A", "B", "C"]
+    },
+    "constField": {
+      "const": "sampleConst"
+    },
+    "oneOfField": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "anyOfField": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "allOfField": {
+      "allOf": [
+        {
+          "type": "string",
+          "minLength": 3
+        },
+        {
+          "type": "string",
+          "maxLength": 5
+        }
+      ]
+    },
+    "notField": {
+      "not": {
+        "type": "string"
+      }
+    }
+  },
+  "required": ["booleanField", "integerField", "numberField", "stringField"]
+}

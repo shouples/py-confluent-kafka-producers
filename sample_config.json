@@ -1,0 +1,8 @@
+{
+    "kc_endpoint": "< SERVER URL(S) HERE >",
+    "kc_api_key": "< CLUSTER API KEY HERE >",
+    "kc_api_secret": "< CLUSTER API SECRET HERE >",
+    "sr_endpoint": "< SCHEMA REGISTRY URL HERE >",
+    "sr_api_key": "< SCHEMA REGISTRY API KEY HERE >",
+    "sr_api_secret": "< SCHEMA REGISTRY API SECRET HERE >"
+}
